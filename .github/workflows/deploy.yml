@@ -27,4 +27,3 @@ jobs:
         --deployment-group-name nodejs-ex-deployment-group \
         --deployment-config-name CodeDeployDefault.OneAtATime \
         --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
-        --deployment-style DeploymentStyle=WITH_TRAFFIC_CONTROL,DeploymentOption=WITH_OVERWRITE_CONTENT
