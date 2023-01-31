@@ -27,4 +27,4 @@ jobs:
         --deployment-group-name nodejs-ex-deployment-group \
         --deployment-config-name CodeDeployDefault.OneAtATime \
         --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
-        --overwrite-content
+        --file-exists-behavior OVERWRITE
